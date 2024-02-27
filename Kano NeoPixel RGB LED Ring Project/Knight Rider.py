@@ -4,7 +4,7 @@ import utime
 numpix = 10
 strip = Neopixel(numpix, 0, 28, "RGB")
 
-delay = 0.040
+delay = 0.065
 
 utime.sleep(delay)
 
@@ -29,10 +29,8 @@ while True:
     for x in range(10):
         strip.set_pixel(x, violet)
         strip.show()
-        utime.sleep(delay)
         strip.set_pixel(x, violet)
         strip.show()
-        utime.sleep(delay)
         strip.set_pixel(x, violet)
         strip.show()
         utime.sleep(delay)
@@ -48,14 +46,12 @@ while True:
 
         
   ############ Left to Right ##################  
-    for x in reversed(range(9)):       
-        strip.set_pixel(x, violet)
-        utime.sleep(delay)
+    for x in reversed(range(10)):       
+        strip.set_pixel(x, red)
         strip.show()
-        strip.set_pixel(x, violet)
-        utime.sleep(delay)
+        strip.set_pixel(x, red)
         strip.show()
-        strip.set_pixel(x, violet)
+        strip.set_pixel(x, red)
         utime.sleep(delay)
         strip.show()
         utime.sleep(delay)
@@ -67,4 +63,5 @@ while True:
         strip.show()
         
           
+
 
