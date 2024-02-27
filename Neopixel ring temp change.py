@@ -11,7 +11,7 @@ num_pixels = 10
 pixels = NeoPixel(pin, num_pixels)
 
 # Define temperature thresholds and corresponding colors (adjust values as desired)
-thresholds = [18, 22, 25]  # Temperature thresholds in Celsius
+thresholds = [0, 20, 25]  # Temperature thresholds in Celsius
 colors = [(0, 0, 255), (0, 255, 0), (255, 0, 0)]  # Corresponding colors (Blue, Green, Red)
 
 def get_temperature():
